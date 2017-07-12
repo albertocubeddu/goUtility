@@ -20,6 +20,5 @@ func testEq(a, b []string) bool {
 		}
 	}
 
-
 	return true
 }

@@ -2,7 +2,7 @@ package arrayUtility_test
 
 import "testing"
 import (
-	"github.com/albertocubeddu/goUtility/array"
+	"github.com/albertocubeddu/goUtility/arrayUtility"
 )
 
 func TestContain(t *testing.T) {
@@ -10,15 +10,15 @@ func TestContain(t *testing.T) {
 		t.Fail()
 	}
 
-	if !arrayUtility.Contain("123", []string{"hello","world","123"}) {
+	if !arrayUtility.Contain("123", []string{"hello", "world", "123"}) {
 		t.Fail()
 	}
 
-	if arrayUtility.Contain("test", []string{"hello","world"}) {
+	if arrayUtility.Contain("test", []string{"hello", "world"}) {
 		t.Fail()
 	}
 
-	if arrayUtility.Contain("123", []string{"hello","world"}) {
+	if arrayUtility.Contain("123", []string{"hello", "world"}) {
 		t.Fail()
 	}
 }
