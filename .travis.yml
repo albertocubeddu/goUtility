@@ -1,0 +1,16 @@
+language: go
+go:
+  - 1.6
+  - 1.7
+  - 1.8
+  - master
+
+script:
+  - go build github.com/albertocubeddu/goUtility/array
+  - go build github.com/albertocubeddu/goUtility/database
+  - go build github.com/albertocubeddu/goUtility/system
+  - go build github.com/albertocubeddu/goUtility/test
+  - go test -v -cover -race github.com/albertocubeddu/goUtility/array
+  - go test -v -cover -race github.com/albertocubeddu/goUtility/database
+  - go test -v -cover -race github.com/albertocubeddu/goUtility/system
+  - go test -v -cover -race github.com/albertocubeddu/goUtility/test
